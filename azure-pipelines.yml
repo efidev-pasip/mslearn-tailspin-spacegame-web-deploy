@@ -85,7 +85,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              appType: 'WebApp'
+              appType: 'webAppLinux'
               azureSubscription: 'svc-conn-tailspin-deploy'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
