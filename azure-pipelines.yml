@@ -132,7 +132,7 @@ stages:
             displayName: 'Azure App Service Deploy: website'
             inputs:
               azureSubscription: '$(svcConn)'
-              deployToSlotOrASE: 'true'
+              deployToSlotOrASE: true
               resourceGroupName: 'tailspin-space-game-rg'
               slotName: 'swap'
               appName: '$(WebAppNameStaging)'
